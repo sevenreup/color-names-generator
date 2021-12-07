@@ -1,12 +1,16 @@
 const chalk = require('chalk')
+const got = require('got');
+const parseHtml = require('../utils/parse');
 
 async function download() {
-    console.log(chalk.default.blue("Download Started"));
+    var http = require("http");
+    console.log(chalk.blue("Download Started"));
     try {
-        const data = await fetch("https://www.w3schools.com/colors/colors_names.asp");
-        console.log(chalk.default.green(data));
+        const res = await got("https://www.w3schools.com/colors/colors_names.asp");
+        var data = parseHtml(res.body);
+        console.log(data);
     } catch (error) {
-        console.log(chalk.default.red("Failed"));
+        console.log(chalk.red(error));
     }
 
 }

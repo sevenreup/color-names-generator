@@ -1,0 +1,3 @@
+function convertTo(type, data = []) {
+    
+}
