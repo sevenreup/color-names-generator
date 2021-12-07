@@ -1,0 +1,33 @@
+{
+  "name": "color-names-generator",
+  "version": "1.0.0.1",
+  "description": "Generator known color to name pairs",
+  "main": "index.js",
+  "bin": {
+    "colorname": "index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sevenreup/color-names-generator.git"
+  },
+  "author": {
+    "name": "Christopher Phiri",
+    "email": "none@blank.com",
+    "url": "https://twitter.com/sevenreup4ill"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sevenreup/color-names-generator/issues"
+  },
+  "homepage": "https://github.com/sevenreup/color-names-generator#readme",
+  "dependencies": {
+    "boxen": "^6.2.1",
+    "chalk": "^5.0.0",
+    "commander": "^8.3.0",
+    "conf": "^10.1.1",
+    "yargs": "^17.3.0"
+  }
+}
