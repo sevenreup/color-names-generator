@@ -16,9 +16,9 @@ export default colors;
 
 function convertTo(type, data = []) {
     const template = Handlebars.compile(jsTemplate);
-    console.log(template({
+    return template({
         colors: data
-    }));
+    });
 }
 
 module.exports = convertTo;
